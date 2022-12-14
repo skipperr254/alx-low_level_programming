@@ -2,8 +2,9 @@
 
 /**
  * add - adds two integers and returns the result
- *
- * n: print from this number
+ * @a: val 1 for addition
+ * @b: val 2 for addition
+ * @c: sum
 */
 int add(int a, int b)
 {
