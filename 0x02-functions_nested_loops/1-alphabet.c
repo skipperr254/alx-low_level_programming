@@ -1,17 +1,21 @@
 #include "main.h"
+
 /**
- *  prints _putchar, followed by new linees
+ * print_alphabet - check the code for ALX School students.
+ *
+ * Return: Always 0.
  */
-int main(void)
+
+void print_alphabet(void)
 {
-	char abe[] = "_putchar";
+	char alp = 'a';
 
-	int c;
-
-	for (c = 0; c < 8; c++)
+	while (alp <= 'z')
 	{
-		_putchar(abe[c]);
+		_putchar (alp);
+		alp++;
+
 	}
-	_putchar('\n');
-	return (0);
+	_putchar ('\n');
+
 }
