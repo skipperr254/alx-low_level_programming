@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - check the code for ALX School students.
- *c: char to check
+ * @c: char to check
  * Return: Always 0.
  */
 
