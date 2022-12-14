@@ -4,7 +4,7 @@
  * add - adds two integers and returns the result
  * @a: val 1 for addition
  * @b: val 2 for addition
- * @c: sum
+ * @add: returns sum of a and b
 */
 int add(int a, int b)
 {
