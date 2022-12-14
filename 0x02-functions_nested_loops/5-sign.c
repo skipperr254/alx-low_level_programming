@@ -2,6 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number
+ *
  * Return: Always 0.
  */
 

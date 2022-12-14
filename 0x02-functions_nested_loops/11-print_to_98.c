@@ -3,6 +3,8 @@
 
 /**
  * print_to_98 - prints all natural numbers from n to 98,
+ *
+ * Return: sum of a and b
  */
 void print_to_98(int n)
 {
