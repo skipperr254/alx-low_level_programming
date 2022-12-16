@@ -6,8 +6,10 @@
  * Return: 0 when true else false
  */
 
-int _isupper(int c) {
-    if (c >= 'A' && c <= 'Z') {
+int _isupper(int c) 
+{
+    if (c >= 'A' && c <= 'Z') 
+    {
         return (1);
     }
     return (0);
