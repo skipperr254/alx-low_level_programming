@@ -1,10 +1,8 @@
-#include "main.h"
-
 /**
- * _strspn - Gets the length of a prefix substring.
- * @s: String where substring will look.
- * @accept: Substring of accepted chars.
- * Return: Length of occurrence.
+  * _strspn - finds  length of a prefix substring.
+  * @s: String where substring will look.
+  * @accept: Substring of accepted chars.
+  * Return: Length of occurrence.
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -15,16 +13,14 @@ unsigned int _strspn(char *s, char *accept)
 	while (*s++)
 	{
 		while (*accept++)
-		{
-			if (*(s - 1) == *(accpet - 1))
+			if (*(s - 1) == *(accept - 1))
 			{
 				c++;
 				break;
 			}
-		}
-		if (!(*--accept))
-			break;
-		accept = t;
+			if (!(*--accept))
+				break;
+			accept = t;
 	}
 	return (c);
 }
