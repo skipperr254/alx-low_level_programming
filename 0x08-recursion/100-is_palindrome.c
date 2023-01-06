@@ -31,6 +31,8 @@ int _is_palindrome(char *s, int first, int last)
 		return (1);
 	if (s[first] != s[last])
 		return (0);
+	if (first == (strlen(s) - 1) && last == 0)
+		return (1);
 	first++;
 	last--;
 	return (_is_palindrome(s, first, last));
