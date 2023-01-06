@@ -9,8 +9,8 @@
 
 int is_palindrome(char *s)
 {
-	int first = 0;
-	int last = strlen(s) - 1;
+	unsigned long int first = 0;
+	unsigned long int last = strlen(s) - 1;
 
 	return (_is_palindrome(s, first, last));
 }
