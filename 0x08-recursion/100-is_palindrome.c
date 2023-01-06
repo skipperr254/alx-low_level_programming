@@ -23,7 +23,7 @@ int is_palindrome(char *s)
  * Return: 0 or 1
  */
 
-int _is_palindrome(char *s, int first, int last)
+int _is_palindrome(char *s, unsigned long int first, unsigned long int last)
 {
 	if (*s == '\0')
 		return (1);
