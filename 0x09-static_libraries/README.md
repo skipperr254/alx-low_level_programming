@@ -1,1 +1,1 @@
-More strings pointers and arrays
+C static libraries
