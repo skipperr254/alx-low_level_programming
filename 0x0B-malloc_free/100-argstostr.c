@@ -9,8 +9,8 @@
  */
 char *argstostr(int ac, char **av)
 {
-	char *aout;
-	int c, i, j, ia;
+	char *out;
+	int c, ia, i, j;;
 
 	if (ac == 0)
 	{
@@ -26,11 +26,11 @@ char *argstostr(int ac, char **av)
 		c++;
 	}
 
-	aout = malloc((c + 1) * sizeof(char));
+	out = malloc((c + 1) * sizeof(char));
 
-	if (aout == NULL)
+	if (out == NULL)
 	{
-		free(aout);
+		free(out);
 		return (NULL);
 	}
 
@@ -38,15 +38,15 @@ char *argstostr(int ac, char **av)
 	{
 		if (av[i][j] == '\0')
 		{
-			aout[ia] = '\n';
+			out[ia] = '\n';
 			i++;
 			ia++;
 			j = 0;
 		}
 		if (ia < c - 1)
-			aout[ia] = av[i][j];
+			out[ia] = av[i][j];
 	}
-	aout[ia] = '\0';
+	out[ia] = '\0';
 
-	return (aout);
+	return (out);
 }
